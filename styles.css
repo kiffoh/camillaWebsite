@@ -1,0 +1,63 @@
+.img-container, .btn-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    flex: 4;
+    height: 100vh;
+}
+
+.text-container {
+    flex: 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+button {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: larger;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    
+}
+
+.overall-container {
+    display: flex;
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+
+    overflow: hidden;
+    border-right: .15em solid orange;
+    margin: 0 auto;
+    font-size: x-large;
+    animation: typewriter 5s steps(40);
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
