@@ -7,7 +7,7 @@ overallContainer.classList.add("overall-container");
 const imgContainer = document.createElement("div");
 imgContainer.classList.add("img-container");
 const img = document.createElement("img");
-img.src = "C:/Users/Dell/repos/Javascript/JavaScript Course/camilla/camilla_photo.jpg";
+img.src = "camilla_photo.jpg";
 img.classList.add("active");
 imgContainer.appendChild(img);
 
