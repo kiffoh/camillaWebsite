@@ -17,11 +17,25 @@
     justify-content: flex-start;
     align-items: center;
     margin-right: 50px;
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: x-large;
 }
 
 .img-container img {
     max-width: 100%;
     max-height: 100%;
+    overflow: hidden;
+    animation: slideInFromTop 1s forwards; /* Animation duration and timing */
+}
+
+@keyframes slideInFromTop {
+    from {
+        height: 0; /* Start with height 0 */
+    }
+    to {
+        height: 100%; /* End with full height */
+    }
 }
 
 button {
@@ -42,22 +56,3 @@ body {
     display: flex;
 }
 
-p {
-    font-family: "Times New Roman", Times, serif;
-
-    overflow: hidden;
-    border-right: .15em solid orange;
-    margin: 0 auto;
-    font-size: x-large;
-    animation: typewriter 5s steps(40);
-}
-
-@keyframes typewriter {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
